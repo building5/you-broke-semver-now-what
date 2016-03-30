@@ -1,0 +1,29 @@
+@startuml
+
+start
+
+if (Did you break semver on purpose?) then (yes)
+   :Please don't do that again;
+endif
+
+if (Can you fix the code so that is compatible\nwith both pre-break and post-break versions?) then (yes)
+   if (Quickly?) then (yes)
+      :Release a patch version. semver restored.;
+      stop
+   endif
+endif
+
+:Republish the semver-breaking\nversion with a major version bump.;
+
+if (If you fix the break, does it \nreintroduce a bug, or drop feature?) then (bug)
+   :Publish a patch version which fixes\nsemver, but reintroduces the bug.;
+else (feature)
+   if (How long ago did you publish the breaking version?) then (just now)
+     :Break semver again; publish a patch version\nwhich fixes semver, but is missing the feature.;
+   else (it's been a while)
+     :Wait a bit to see if breaking semver again is necessary.\nYou'll have to balance fixing people who are affected by\nthe semver break with breaking everyone who's using your\nnew feature.;
+   endif
+endif
+stop
+
+@enduml
