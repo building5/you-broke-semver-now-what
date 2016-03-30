@@ -1,5 +1,7 @@
 # You broke SemVer. Now what?
 
+**Work in progress, but patches/comments/suggestions welcome.**
+
 It [happens][] [occasionally][]. A maintainer publishes a release of software
 which, according to the [rules of semver][semver], _should_ have been a major
 version bump. But mistakes were made, and the version of software was published
@@ -32,6 +34,8 @@ really did happen, and someone was already using that version).
 
 The purpose of this document is to help you calmly and methodically figure out
 the best course of action to take when you realize that you've broken semver.
+
+ ![flow-chart](flow-chart.png)
 
  [npm-semver]: https://docs.npmjs.com/getting-started/semantic-versioning
  [semver-break]: http://semver.org/#what-if-i-inadvertently-alter-the-public-api-in-a-way-that-is-not-compliant-with-the-version-number-change-ie-the-code-incorrectly-introduces-a-major-breaking-change-in-a-patch-release

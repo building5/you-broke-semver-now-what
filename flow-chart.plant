@@ -3,7 +3,7 @@
 start
 
 if (Did you break semver on purpose?) then (yes)
-   :Please don't do that again;
+   :Please don't do that.\nThat was mean.;
 endif
 
 if (Can you fix the code so that is compatible\nwith both pre-break and post-break versions?) then (yes)
@@ -21,7 +21,7 @@ else (feature)
    if (How long ago did you publish the breaking version?) then (just now)
      :Break semver again; publish a patch version\nwhich fixes semver, but is missing the feature.;
    else (it's been a while)
-     :Wait a bit to see if breaking semver again is necessary.\nYou'll have to balance fixing people who are affected by\nthe semver break with breaking everyone who's using your\nnew feature.;
+     :Wait a bit to see if breaking semver again is necessary.\nYou'll have to balance fixing people who are affected by\nthe semver break with what might happen if you break\nsemver again to fix them.;
    endif
 endif
 stop
