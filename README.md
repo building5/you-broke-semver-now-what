@@ -41,3 +41,12 @@ the best course of action to take when you realize that you've broken semver.
  [semver-break]: http://semver.org/#what-if-i-inadvertently-alter-the-public-api-in-a-way-that-is-not-compliant-with-the-version-number-change-ie-the-code-incorrectly-introduces-a-major-breaking-change-in-a-patch-release
 
  [semver]: http://semver.org/
+
+## Building
+
+The chart is written in [PlantUML](http://plantuml.com/activity2.html). After
+updating `flow-chart.plant`, run `make` to rebuild the chart.
+
+## TODO
+
+ * Make the chart prettier
