@@ -10,7 +10,7 @@ with only a minor or patch version bump.
  [happens]: https://github.com/chalk/ansi-styles/issues/15
  [occasionally]: https://github.com/chaijs/chai/blob/84ed233a6d5dcc93ca7a759cedbd5fb10d52fabb/ReleaseNotes.md#200--2015-02-09
 
-If you work with a system [which relies on semver][nmp-semver] for any period of
+If you work with a system [which relies on semver][npm-semver] for any period of
 time, you have probably been on the receiving end of one of these breaks. But
 what do you do when you are the guilty party?
 
